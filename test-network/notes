@@ -1,0 +1,2 @@
+Java smart contract dir/
+ls ../asset-transfer-basic/chaincode-java/src/main/java/org/hyperledger/fabric/samples/assettransfer/AssetTransfer.java

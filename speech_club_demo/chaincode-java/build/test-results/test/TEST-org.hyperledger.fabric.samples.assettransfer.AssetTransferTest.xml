@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperledger.fabric.samples.assettransfer.AssetTransferTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-02-11T06:06:02" hostname="Nevins-PC" time="1.24">
+  <properties/>
+  <testcase name="invokeGetAllAssetsTransaction()" classname="org.hyperledger.fabric.samples.assettransfer.AssetTransferTest" time="1.187"/>
+  <testcase name="invokeInitLedgerTransaction()" classname="org.hyperledger.fabric.samples.assettransfer.AssetTransferTest" time="0.033"/>
+  <testcase name="invokeUnknownTransaction()" classname="org.hyperledger.fabric.samples.assettransfer.AssetTransferTest" time="0.018"/>
+  <system-out><![CDATA[Asset@ca6ca44e [assetID=asset1, firstName=Adam, lastName=Smith, active=true, level=intermediate, topic=Persistant People, state=selection]
+Asset@eec08278 [assetID=asset2, firstName=John, lastName=Smith, active=true, level=beginner, topic=Persistant People, state=review]
+Asset@fcfd3539 [assetID=asset3, firstName=Kelly, lastName=Smith, active=true, level=advanced, topic=Persistant People, state=rehersal]
+Asset@8eae84ad [assetID=asset4, firstName=Brad, lastName=Smith, active=true, level=advanced, topic=Persistant People, state=ready]
+Asset@3ed42f13 [assetID=asset5, firstName=Jane, lastName=Smith, active=true, level=intermediate, topic=Persistant People, state=selection]
+Asset@fc28996a [assetID=asset6, firstName=Liz, lastName=Smith, active=true, level=beginner, topic=Persistant People, state=review]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

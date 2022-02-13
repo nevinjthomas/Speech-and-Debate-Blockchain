@@ -1,0 +1,19 @@
+ŒAsset@5e07dac [assetID=member1, firstName=Adam, lastName=Smith, active=true, level=intermediate, topic=Hard work pays off, state=selection]
+
+‹Asset@ca6ca44e [assetID=asset1, firstName=Adam, lastName=Smith, active=true, level=intermediate, topic=Persistant People, state=selection]
+
+„Asset@eec08278 [assetID=asset2, firstName=John, lastName=Smith, active=true, level=beginner, topic=Persistant People, state=review]
+
+‡Asset@fcfd3539 [assetID=asset3, firstName=Kelly, lastName=Smith, active=true, level=advanced, topic=Persistant People, state=rehersal]
+
+ƒAsset@8eae84ad [assetID=asset4, firstName=Brad, lastName=Smith, active=true, level=advanced, topic=Persistant People, state=ready]
+
+‹Asset@3ed42f13 [assetID=asset5, firstName=Jane, lastName=Smith, active=true, level=intermediate, topic=Persistant People, state=selection]
+
+ƒAsset@fc28996a [assetID=asset6, firstName=Liz, lastName=Smith, active=true, level=beginner, topic=Persistant People, state=review]
+Asset asset1 does not exist
+Asset asset1 does not exist
+Asset asset1 state transfered
+Asset asset1 does not exist
+Asset asset1 already exists
+Asset asset1 does not exist

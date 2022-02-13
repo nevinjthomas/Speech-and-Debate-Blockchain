@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Asset.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">basic</a> &gt; <a href="index.source.html" class="el_package">org.hyperledger.fabric.samples.assettransfer</a> &gt; <span class="el_source">Asset.java</span></div><h1>Asset.java</h1><pre class="source lang-java linenums">/*
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package org.hyperledger.fabric.samples.assettransfer;
+
+import java.util.Objects;
+
+import org.hyperledger.fabric.contract.annotation.DataType;
+import org.hyperledger.fabric.contract.annotation.Property;
+
+import com.owlike.genson.annotation.JsonProperty;
+
+@DataType()
+public final class Asset {
+
+    @Property()
+    private final String assetID;
+
+    @Property()
+    private final String firstName;
+
+    @Property()
+    private final String lastName;
+
+    @Property()
+    private final boolean active;
+
+    @Property()
+    private final String level;
+
+    @Property()
+    private final String topic;
+
+    @Property()
+    private final String state;
+
+    // public methods
+    public String getAssetID() {
+<span class="fc" id="L40">        return assetID;</span>
+    }
+
+    public String getFirstName() {
+<span class="fc" id="L44">        return firstName;</span>
+    }
+
+    public String getLastName() {
+<span class="fc" id="L48">        return lastName;</span>
+    }
+
+    public boolean getActive() {
+<span class="fc" id="L52">        return active;</span>
+    }
+
+    public String getLevel() {
+<span class="fc" id="L56">        return level;</span>
+    }
+
+    public String getTopic() {
+<span class="fc" id="L60">        return topic;</span>
+    }
+
+    public String getState() {
+<span class="fc" id="L64">        return state;</span>
+    }
+
+    // constructor
+    public Asset(@JsonProperty(&quot;assetID&quot;) final String assetID, @JsonProperty(&quot;firstName&quot;) final String firstName,
+                 @JsonProperty(&quot;lastName&quot;) final String lastName, @JsonProperty(&quot;active&quot;) final boolean active,
+                 @JsonProperty(&quot;level&quot;) final String level, @JsonProperty(&quot;topic&quot;) final String topic,
+<span class="fc" id="L71">                 @JsonProperty(&quot;state&quot;) final String state) {</span>
+<span class="fc" id="L72">        this.assetID = assetID;</span>
+<span class="fc" id="L73">        this.firstName = firstName;</span>
+<span class="fc" id="L74">        this.lastName = lastName;</span>
+<span class="fc" id="L75">        this.active = active;</span>
+<span class="fc" id="L76">        this.level = level;</span>
+<span class="fc" id="L77">        this.topic = topic;</span>
+<span class="fc" id="L78">        this.state = state;</span>
+<span class="fc" id="L79">    }</span>
+
+    @Override
+    public boolean equals(final Object obj) {
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        if (this == obj) {</span>
+<span class="fc" id="L84">            return true;</span>
+        }
+
+<span class="fc bfc" id="L87" title="All 4 branches covered.">        if ((obj == null) || (getClass() != obj.getClass())) {</span>
+<span class="fc" id="L88">            return false;</span>
+        }
+
+<span class="fc" id="L91">        Asset other = (Asset) obj;</span>
+
+<span class="fc bfc" id="L93" title="All 2 branches covered.">        if (getActive() != other.getActive()) {</span>
+<span class="fc" id="L94">            return false;</span>
+        }
+
+<span class="fc" id="L97">        return Objects.deepEquals(</span>
+<span class="fc" id="L98">                new String[] {getAssetID(), getFirstName(), getLastName(), getLevel(), getTopic(), getState()},</span>
+<span class="fc" id="L99">                new String[] {other.getAssetID(), other.getFirstName(), other.getLastName(), other.getLevel(), other.getTopic(), other.getState()});</span>
+                /*
+                Objects.deepEquals(
+                new int[] {getSize(), getAppraisedValue()},
+                new int[] {other.getSize(), other.getAppraisedValue()});
+                */
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L109">        return Objects.hash(getAssetID(), getFirstName(), getLastName(), getActive(), getLevel(), getTopic(), getState());</span>
+    }
+
+
+    @Override
+    public String toString() {
+<span class="fc" id="L115">        return this.getClass().getSimpleName() + &quot;@&quot; + Integer.toHexString(hashCode())</span>
+        + &quot; [assetID=&quot; + assetID + &quot;, firstName=&quot; + firstName + &quot;, lastName=&quot; + lastName + &quot;, active=&quot; + active
+        + &quot;, level=&quot; + level + &quot;, topic=&quot; + topic + &quot;, state=&quot; + state + &quot;]&quot;;
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>

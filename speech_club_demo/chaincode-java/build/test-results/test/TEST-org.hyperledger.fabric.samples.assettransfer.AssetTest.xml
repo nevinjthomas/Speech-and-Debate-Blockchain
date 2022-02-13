@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.hyperledger.fabric.samples.assettransfer.AssetTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-11T06:06:02" hostname="Nevins-PC" time="0.168">
+  <properties/>
+  <testcase name="toStringIdentifiesAsset()" classname="org.hyperledger.fabric.samples.assettransfer.AssetTest" time="0.168"/>
+  <system-out><![CDATA[Asset@5e07dac [assetID=member1, firstName=Adam, lastName=Smith, active=true, level=intermediate, topic=Hard work pays off, state=selection]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
