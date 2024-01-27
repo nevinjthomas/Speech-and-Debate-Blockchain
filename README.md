@@ -1,2 +1,2 @@
 # Speech and Debate Blockchain
- Blcokchain system to run a Speech & Debate Club
+ Portions of code used to build a blcokchain system designed to help run a Speech & Debate Club
